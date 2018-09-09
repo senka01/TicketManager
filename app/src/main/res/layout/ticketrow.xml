@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="イベント名"
+            android:layout_marginTop="1dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:id="@+id/ticketHeader"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="48dp">
+
+            <TextView
+                android:id="@+id/headerNumber"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="枚数"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/headerName"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:text="譲先 "
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/headerSeat"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="座席"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/headerSellPrice"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="売価"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/headerReceived"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="受渡"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/headerPaid"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="支払"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/headerPrice"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="受取額"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ticketDetail"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="40dp">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="New Text"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="New Text"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/seat"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="New Text"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/sellPrice"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Text"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/received"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="未"
+                android:textColor="#FF0000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/paid"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="未"
+                android:textColor="#FF0000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sumPaidPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

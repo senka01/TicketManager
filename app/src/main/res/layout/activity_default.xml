@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DefaultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/ticketAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="チケット追加" />
+
+        <Button
+            android:id="@+id/eventListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="イベント一覧" />
+
+        <Button
+            android:id="@+id/userListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ユーザー一覧" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="計算" />
+
+        <Button
+            android:id="@+id/addEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="イベント追加" />
+
+        <Button
+            android:id="@+id/userAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ユーザー追加" />
+
+        <Button
+            android:id="@+id/ticketListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="チケット一覧" />
+
+        <Button
+            android:id="@+id/ticketSumButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="チケット代合計表示" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="公演" />
+
+        <Spinner
+            android:id="@+id/eventSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="枚数" />
+
+        <Spinner
+            android:id="@+id/spinnerNumber"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_values"
+            />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="売価" />
+
+        <EditText
+            android:id="@+id/sellPriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="座席" />
+
+        <EditText
+            android:id="@+id/seatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="未定" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="備考" />
+
+        <EditText
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Switch
+            android:id="@+id/siteFlg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="サイト経由" />
+
+        <TextView
+            android:id="@+id/textViewOpponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="受け渡し相手" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/opponentSpinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/newUserName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="新規ユーザー名"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/textViewSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="経由サイト" />
+
+        <Spinner
+            android:id="@+id/spinnerSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/receivedCheckBox"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:text="チケット受け渡し済" />
+            <CheckBox
+                android:id="@+id/paidCheckBox"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="チケット代受け取り済" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveTicketButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/deleteTicketButton"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="削除" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resulstTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
